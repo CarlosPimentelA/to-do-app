@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tasks-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4S;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#tasks-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query para tamaños de pantalla pequeños */
+@media screen and (max-width: 600px) {
+    #tasks-button {
+        width: 100%;
+    }
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input
+{
+    font-size: large;
+    border: 2px solid #0056b3;
+    border-radius: 6px;
+}
+
+#completed
+{
+    border: 2px solid rgb(9, 255, 0);
+    border-radius: 6px;
+    background-color: rgba(55, 174, 31, 0.543);
+    cursor: pointer;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+#delete
+{
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 6px;
+    background-color: rgba(229, 17, 17, 0.543);
+    cursor: pointer;
+    font-size: medium;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.completed
+{
+    background-color: rgba(55, 174, 31, 0.543);
+}
